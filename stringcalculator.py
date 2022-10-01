@@ -1,4 +1,4 @@
 def Add(a):
     # Add implementation
-    a = a
-    return 0
+    if a == "":
+        return 0
