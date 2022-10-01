@@ -1,3 +1,4 @@
-def Add(a):
+def Add(s):
     # Add implementation
-    return 0
+    if s == "":
+        return 0
