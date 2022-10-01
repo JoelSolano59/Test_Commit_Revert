@@ -6,14 +6,15 @@ This is an activity for TC3405 course.
 ## Prepare environment
 
 - Using VsCode install [Run on Save](https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave)
-- Go to settings: 
-  - File > Preferences > Settings 
-  - hitting Ctrl + , (Cmd + , if you’re on a Mac).  
+- Go to settings:
+  - File > Preferences > Settings
+  - hitting Ctrl + , (Cmd + , if you’re on a Mac).
 - In the left side menu click on `Extensions`
 - Look for the extension `Run On Save` (Reload vscode if it doesn't appear)
 - Open settings.json
-- Inside emeraldwalk.runonsave add: 
-``` json
+- Inside emeraldwalk.runonsave add:
+
+```json
     "commands": [
             {
                 "match": "(.+\\\\Test_Commit_Revert\\\\tests_stringcalculator\\.py|.+\\/Test_Commit_Revert\\/tests_stringcalculator\\.py)",
@@ -26,14 +27,14 @@ This is an activity for TC3405 course.
             },
         ]
 ```
-- Your file should have the structure as the settings.json in this repository
 
+- Your file should have the structure as the settings.json in this repository
 
 ## Instructions
 
 - Fork this repository into your Github.
 - Perform the following TCR challenge before the talk about this topic.
- 
+
 ### String Calculator Kata (via Roy Osherove)
 
 - Create a simple String calculator with a method int Add(string numbers). The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will return 0). For example "" or "1" or "1,2"
@@ -46,7 +47,7 @@ This is an activity for TC3405 course.
   - the following input is NOT ok: "1,\n" (not need to prove it - just clarifying)
 - Support different delimiters. To change a delimiter, the beginning of the string will contain a separate line that looks like this: [delimiter]\n[numbers...], for example ;\n1;2 should return three where the default delimiter is ; .
   - The first line is optional. all existing scenarios should still be supported
-- Calling Add with a negative number will throw an exception "negatives not allowed" - and the negative that was passed. 
+- Calling Add with a negative number will throw an exception "negatives not allowed" - and the negative that was passed.
   - if there are multiple negatives, show all of them in the exception message
 
 ## Notes
