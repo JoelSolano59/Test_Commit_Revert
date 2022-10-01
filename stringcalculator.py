@@ -3,8 +3,10 @@ def Add(s):
     if s == "":
         return 0
     else:
-        nums = s.split(",")
         res = 0
-        for num in nums:
-            res += int(num)
+        lines = s.split("\n")  # ["1", "1,2"]
+        for line in lines:
+            nums = line.split(",")
+            for num in nums:
+                res += int(num)
         return res
