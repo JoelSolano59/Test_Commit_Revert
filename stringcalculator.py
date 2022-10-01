@@ -3,4 +3,8 @@ def Add(s):
     if s == "":
         return 0
     else:
-        return int(s)
+        nums = s.split(",")
+        res = 0
+        for num in nums:
+            res += int(num)
+        return res
